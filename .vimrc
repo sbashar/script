@@ -4,6 +4,7 @@ set shiftwidth=4               "Indent/outdent by four columns"
 set shiftround                   "Always indent/outdent to nearest tabstop"
 
 syntax enable
+set number
 
 execute pathogen#infect()       
 set statusline+=%#warningmsg#
