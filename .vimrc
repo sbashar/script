@@ -3,9 +3,6 @@ set expandtab                   "Convert all tabs typed into spaces"
 set shiftwidth=4               "Indent/outdent by four columns"
 set shiftround                   "Always indent/outdent to nearest tabstop"
 
-syntax enable
-set number
-
 execute pathogen#infect()       
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -18,3 +15,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_checkers = ['w3']
 
 let g:syntastic_enable_perl_checker = 1
+
+syntax enable
+set background=light
+colorscheme solarized
+set number
