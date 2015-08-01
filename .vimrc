@@ -17,6 +17,7 @@ let g:syntastic_html_checkers = ['w3']
 let g:syntastic_enable_perl_checker = 1
 
 syntax enable
+set nobackup
 set background=light
 colorscheme solarized
 set number
