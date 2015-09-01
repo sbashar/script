@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugin list
 Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
