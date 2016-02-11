@@ -64,18 +64,3 @@ Vagrant.configure(2) do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   #config.vm.provision "shell", path: "setup_authorized_keys.sh"
-  config.vm.provision "shell", inline: <<-SHELL
-    echo "Setup packages"
-    sudo apt-get update
-    sudo apt-get install -y git
-    echo done
-    cp setup_authorized_keys.sh ~/
-    echo "Setup vim"
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    git clone https://github.com/sbashar/script.git ~/script
-    ln ~/script/.vimrc .vimrc
-    vim +PluginInstall +qall
-    echo done
-
-  SHELL
-end
