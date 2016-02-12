@@ -35,6 +35,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone https://github.com/sbashar/script.git ~/script
 ln ~/script/.vimrc ~/.vimrc
 vim +PluginInstall +qall
-echo "export TERM=xterm-256color" >> ~/.bashrc
-source ~/.bashrc
+echo "export TERM=xterm-256color" >> ~/.profile
+echo "export EDITOR=vim" >> ~/.profile
+source ~/.profile
 echo done
