@@ -22,8 +22,19 @@ sudo service ssh restart
 echo done
 
 echo "Install software"
+
+echo "Install git"
 sudo apt-get install -y git
+echo done
+
+echo "Install jre"
 sudo apt-get install -y default-jre
+echo done
+
+echo "apache2"
+sudo apt-get install -y apache2
+echo done
+
 echo done
 
 echo "Setup gitconfig"
