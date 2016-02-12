@@ -16,11 +16,14 @@ echo "setup authorized_keys"
 cat >> ~/.ssh/authorized_keys << 'EOF'
  ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA5nsf+pYLNWknL7E1zGUqcXup+Xwo0u+y2I3CMLdrYDhO5xCBXo3mEj4+9wp1xkq7X7MO0LfTPDXTcxMxprVkwQYYlkGaZeau8BqXXF0VvQN5O168CJM0atMrQUhbjkRWFUw5uujMguGbAn3pJsEe8y/3XpvO3VFcEe2N1xBw3I+CiLIdOC0Sszr5ud+5AsTtJDCHAhC3lHJNOOSF1k6JGfoRZ5CJ3Zga2trZAt5UzKgeYfMEjSe79Q8UDLZIGF8n4BnutsZCet/wJciIczPHky4bPyoZariAkoJIbcIhzJ5utv7CSPUo3n1w7iJd3anXWSPQdxWjuktfs1bwICG4Ow==
 EOF
+echo "IdentityFile ~/.ssh/github_rsa" >> ~/.ssh/config
+chmod 600 ~/.ssh/*
 sudo service ssh restart
 echo done
 
-echo "Install Software"
+echo "Install software"
 sudo apt-get install -y git
+sudo apt-get install -y default-jre
 echo done
 
 echo "Setup gitconfig"
@@ -38,10 +41,15 @@ vim +PluginInstall +qall
 echo done
 
 echo "Setup environment"
-echo "IdentityFile ~/.ssh/github_rsa" >> ~/.ssh/config
 echo "export TERM=xterm-256color" >> ~/.profile
 echo "export EDITOR=vim" >> ~/.profile
 echo "ssh-agent bash" >> ~/.profile
-echo "ssh-add ~/.ssh/github_rsa" >> ~/.profile
 source ~/.profile
+echo done
+
+echo "Setup teamcity"
+cd ~/
+wget https://download.jetbrains.com/teamcity/TeamCity-9.1.6.tar.gz
+tar -zxvf TeamCity-9.1.6.tar.gz
+rm -rf TeamCity-9.1.6.tar.gz
 echo done
