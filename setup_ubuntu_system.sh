@@ -17,6 +17,7 @@ cat >> ~/.ssh/authorized_keys << 'EOF'
  ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA5nsf+pYLNWknL7E1zGUqcXup+Xwo0u+y2I3CMLdrYDhO5xCBXo3mEj4+9wp1xkq7X7MO0LfTPDXTcxMxprVkwQYYlkGaZeau8BqXXF0VvQN5O168CJM0atMrQUhbjkRWFUw5uujMguGbAn3pJsEe8y/3XpvO3VFcEe2N1xBw3I+CiLIdOC0Sszr5ud+5AsTtJDCHAhC3lHJNOOSF1k6JGfoRZ5CJ3Zga2trZAt5UzKgeYfMEjSe79Q8UDLZIGF8n4BnutsZCet/wJciIczPHky4bPyoZariAkoJIbcIhzJ5utv7CSPUo3n1w7iJd3anXWSPQdxWjuktfs1bwICG4Ow==
 EOF
 sudo service ssh restart
+ssh-add ~/.ssh/github_rsa
 echo done
 
 echo "Install Software"
@@ -32,10 +33,11 @@ echo done
 
 echo "Setup vim"
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-git clone https://github.com/sbashar/script.git ~/script
+git clone git@github.com:sbashar/script.git ~/script
 ln ~/script/.vimrc ~/.vimrc
 vim +PluginInstall +qall
 echo "export TERM=xterm-256color" >> ~/.profile
 echo "export EDITOR=vim" >> ~/.profile
+echo "ssh-agent bash" >> ~/.profile
 source ~/.profile
 echo done
