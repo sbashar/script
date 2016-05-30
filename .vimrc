@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'valloric/youcompleteme'
 
 " All Plugins must be added before the following line
 call vundle#end()            "Required
