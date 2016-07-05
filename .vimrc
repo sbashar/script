@@ -10,10 +10,10 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugin list
 Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'valloric/youcompleteme'
+Plugin 'majutsushi/tagbar'
 
 " All Plugins must be added before the following line
 call vundle#end()            "Required
