@@ -10,9 +10,10 @@ Plugin 'gmarik/Vundle.vim'
 
 " Plugin list
 Plugin 'scrooloose/syntastic'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'majutsushi/tagbar'
 
 " All Plugins must be added before the following line
 call vundle#end()            "Required
@@ -42,3 +43,6 @@ set tabstop=4                    "An indentation level every four columns
 set expandtab                   "Convert all tabs typed into spaces
 set shiftwidth=4               "Indent/outdent by four columns
 set shiftround                   "Always indent/outdent to nearest tabstop
+
+" Set tags
+set tags=tags;/
