@@ -1,2 +1,3 @@
 # script
-A repository for various scripts and configuration files.
+A repository for various scripts and configuration files
+
