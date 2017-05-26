@@ -29,11 +29,12 @@ set laststatus=2
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_html_checkers = ['w3']
 let g:syntastic_enable_cpp_checker = 1
 let g:syntastic_enable_python_checker = 1
 let g:syntastic_enable_javascript_checker = 1
 let g:syntastic_enable_perl_checker = 1
+let g:syntastic_cpp_checkers = ['gcc','cppcheck']
+let g:syntastic_html_checkers = ['w3']
 
 " Solarized settings
 set background=light
