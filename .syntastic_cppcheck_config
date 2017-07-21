@@ -1,0 +1,3 @@
+--std=c++11
+--language=c++
+--enable=warning,style,performance,portability,information,missingInclude
