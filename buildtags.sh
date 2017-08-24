@@ -3,7 +3,7 @@
 TAGS_DIR=/home/sbashar/development/
 if [[ $# -ge 1 ]]
 then
-    TAGS_DIR=$1
+    TAGS_DIR="/home/sbashar/development/"
 fi
 
 echo "Usage : $0 Directory"
