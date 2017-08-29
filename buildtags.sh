@@ -27,7 +27,7 @@ find  $PWD  \( -name "*.[chly]" -o -name "*.[ch]pp" -o -name "*.cc" -o -name "*.
 #find  $APICAT  \( -name "*.spc" -o -name "*.bdy" -o -name "*.sql" \) | grep -v RTEST >> cscope.files
 #find  $APICUSTACC  \( -name "*.spc" -o -name "*.bdy" -o -name "*.sql" \) | grep -v RTEST >> cscope.files
 echo "Building cscope output in $PWD"
-/home/sbashar/development/cscope -b -q
+/usr/bin/cscope -b -q
 
 #find $PWD -name "*.py" >> cscope.files
 #find $PWD -name "*.sql" >> cscope.files
