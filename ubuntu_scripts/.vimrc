@@ -12,10 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
-"Plugin 'altercation/vim-colors-solarized'
-Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-easytags'
 
 " All Plugins must be added before the following line
 call vundle#end()            "Required
@@ -38,10 +34,6 @@ let g:syntastic_enable_perl_checker = 1
 let g:syntastic_cpp_gcc = '-std=c++11 -fdiagnostics-show-option -fmessage-length=0 -W -Wall -Werror -Weffc++ -Wextra -pedantic -Wformat=2 -Wformat-y2k -Wignored-qualifiers -Wmissing-include-dirs -Wunused-parameter -Wfloat-equal -Wundef -Wshadow -Wnon-virtual-dtor -Wpointer-arith -Wcast-qual -Wcast-align -Wconversion -Wsign-conversion -Wlogical-op -Wmissing-declarations -Wmissing-field-initializers -Wmissing-format-attribute -Wredundant-decls'
 let g:syntastic_cpp_checkers = ['gcc','cppcheck']
 let g:syntastic_html_checkers = ['w3']
-
-" Solarized settings
-set background=light
-"colorscheme solarized
 
 syntax enable
 set nobackup
