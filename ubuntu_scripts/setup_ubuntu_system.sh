@@ -17,9 +17,8 @@ echo done
 
 echo "Setup gitconfig"
 git config --global user.name "Saydul Bashar"
-git config --global user.email "saydul.bashar@xain.io"
+git config --global user.email "saydul.bashar@superawesome.com"
 git config --global color.ui true
-git config --global core.autocrlf input
 echo done
 
 echo "Setup vim"

@@ -45,4 +45,3 @@ set shiftround                   "Always indent/outdent to nearest tabstop
 
 autocmd BufRead,BufNewFile *.md,*.txt setlocal spell spelllang=en_gb
 
-set tags=./tags,tags;
