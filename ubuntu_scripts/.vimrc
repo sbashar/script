@@ -12,6 +12,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 " All Plugins must be added before the following line
 call vundle#end()            "Required
